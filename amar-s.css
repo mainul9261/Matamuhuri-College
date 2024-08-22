@@ -1,0 +1,150 @@
+*{
+    padding:0;
+    margin:0;
+}
+.head{
+    font-size:28px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    
+}
+.head h3{
+    margin-left:19%;
+}
+
+nav{
+    display:flex;
+				justify-content:flex-end;
+				height:50px;
+				background-color:black;			
+				align-items:center;
+				
+				
+}
+.links-container ul li i{
+    padding-right:2px;
+}
+.links-container{
+    
+				font-family: "Times New Roman", Times, serif;
+				background-color:black;
+				position:fixed;
+				height:600px;
+				width:170px;
+				right:-100%;
+				top:0;	
+				transition:0.50s	 ease-out;
+}
+.links-container ul li{
+    list-style:none;
+    font-size:20px;
+    padding-left:14px;
+    color:white;
+    line-height:60px;
+        
+}
+.open-btn{
+    font-size:25px;
+    align-items:center;
+    width:30px;
+    height:30px;
+    text-align:center;
+    background-color:#353535;
+    border-radius:5px;
+    margin-right:10px;
+    transition:1s;
+    color:white;
+    
+}
+.close-btn{
+    font-size:30px;
+    align-items:center;
+    width:40px;
+    height:30px;
+    text-align:center;
+    background-color:#353535;
+    border-radius:5px;
+    margin-right:10px;
+    padding:5px 5px 2px;
+    color:white;
+}
+
+nav input[type="checkbox"]{
+    display:none;
+}
+
+#sidbar:checked ~ .links-container{
+    right:0;
+    
+}
+#sidbar:checked ~ .open-btn{
+    display:none;
+}
+
+.links-container ul li:hover{
+    padding-left:75px; 
+    transition:1s;
+    border-bottom:1px solid #636363;
+    
+}
+
+.link i{
+    padding:8px 8px 8px;
+    margin-left:10px;
+    justify-content:space-evenly;
+    margin-top:30px;
+    background-color:#f1f1f1;
+    border-radius:8px;
+}
+.logo h1{
+    line-height:50px;
+    position:absolute;
+}
+
+.form{
+    width:250px;
+    height:300px;
+    padding:13px 13px 13px;
+    border: 1px solid green;
+    align-items:center;
+    position:fixed;
+    margin-left:40px;    
+    margin-top:100px;
+    border-radius:20px;
+    
+    
+}
+.form-login{
+    margin-left:3px;
+    margin-top:50px;
+}
+hed h1{    
+    text-align:center;
+    margin-top:20px;
+    
+}
+.form-login input{
+    outline:none;
+    width:100%;
+    height:100%;
+    border:none;
+    border-bottom:2px solid red;
+    margin-top:10px;
+    background-color:white;
+    padding-top:25px;
+    position:relative;
+}
+.form-login label{
+    font-size:17px;
+    bottom:20px;
+    
+}
+.form button{
+    width:247px;
+    height:30px;
+    background-color:#b900ff;
+    border:none;
+    border-radius:10px;
+   
+}
